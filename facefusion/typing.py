@@ -178,6 +178,7 @@ Job = TypedDict('Job',
 })
 JobSet = Dict[str, Job]
 
+ApplyStateItem = Callable[[Any, Any], None]
 StateKey = Literal\
 [
 	'command',
